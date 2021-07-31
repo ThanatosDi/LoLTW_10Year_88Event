@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     print(f'爬取頁面範圍: {Pagelimit-_env.Pagelimit}~{Pagelimit}')
 
-    with open('invitation.txt', 'a', encoding='utf-8') as f:
+    with open('invitation.txt', 'w', encoding='utf-8') as f:
         for page in range(Pagelimit, Pagelimit-_env.Pagelimit, -1):
             invitation_codes = spider.fetch(page=page).filter()
             f.write('\n'.join(invitation_codes))
