@@ -45,7 +45,7 @@ LOL_Evnet_URL = https://bargain.lol.garena.tw/api/enter
     在瀏覽器打開這個網址會發現就是活動的頁面，接著點網址列上的綠色鎖頭，然後點選 Cookie (Chrome 跟 edge 都大同小異)
     ![](https://imgur.com/zUEXTsS.png)
 
-    接著展開 `bargain.lol.garena.tw` > `Cookie` > `csrftoken`，之後下面的內容點滑鼠左鍵兩下就會全部反白，然後複製起來貼到 .env 中的 CSRF_Token 就可以了
+    接著展開 `bargain.lol.garena.tw` > `Cookie` > `csrftoken`，之後下面的內容點滑鼠左鍵兩下就會全部反白，然後複製起來貼到 .env 中的 CSRF_Token 就可以了  
     ![](https://imgur.com/bHIBcIA.png)
 
 爬蟲的頁面邀請碼抓取的條件為 `Pagelimit` 和 `startPage`  
