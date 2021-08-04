@@ -22,9 +22,7 @@ class Spider():
         }
         logger.debug(f'爬取頁面: {page}')
         with requests.get(_env.Bahamut_Discussion, headers=headers, params=params) as response:
-            # print(response.url)
             if response.status_code != 200:
-                print('爬蟲請求發生錯誤 %s' % response.status_code)
                 logger.error('爬蟲請求發生錯誤 %s' % response.status_code)
             cls.body = response.text
             return cls
