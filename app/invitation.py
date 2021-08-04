@@ -36,7 +36,6 @@ class Invitation:
                 ):
                 logger.info('60 個邀請碼已輸入完成')
                 os.system("pause")
-                exit(0)
             if content.get('enter_code_amount', None):
                 count = content.get('enter_code_amount', None)
                 logger.info(f'成功輸入第 {count} 個邀請碼')
